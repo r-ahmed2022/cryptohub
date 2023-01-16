@@ -2,8 +2,8 @@ import React, {useEffect, useState, useContext} from 'react'
 import { useParams } from "react-router-dom";
 import {Context} from "../Context"
 import {LinearProgress} from "@mui/material"
-
-
+import parse from 'html-react-parser';
+import Chart from "./Chart"
 export default function Coin() {
   const {id} = useParams()
    const [coin, setCoin] = useState()
@@ -18,6 +18,12 @@ export default function Coin() {
           console.log("component unmounted")
         }
    }, [] )
+
+   function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+   if (!coin) return <LinearProgress style={{ backgroundColor: "gold" }} />;
+
   return (
     <div className="coin-page">
     <div className="sidebar">
@@ -26,18 +32,19 @@ export default function Coin() {
            <div className="coin-name">
              <img src={coin?.image.large} alt={coin?.name}/>
              <p style={{textAlign: "center", padding: ".2em .5em" }}>
-              {coin?.description.en.slice(0, 270)}
+              {parse(coin?.description.en.split(". ")[0])}.
              </p>
              <a style={{color: "#fff"}} href={coin?.links.homepage[0]}>Website:<span> {coin?.links.homepage[0]}</span></a>
              <h3>Rank: {coin?.market_cap_rank}</h3>
-             <span>Current Price:&nbsp;{coin?.market_data.current_price.usd}&nbsp;{currency}</span>
+             <span> Current price: - {symbol}{" "}
+              {numberWithCommas(
+                coin?.market_data.current_price[currency.toLowerCase()]
+              )}</span>
            </div>
     </div>
     <div className="chart-div">
-          <h1>Char area</h1>
-          <div className="chart-area">
-
-          </div>
+          <h1>Chart area</h1>
+           <Chart id={coin.id}/>
     </div>
     
     </div>

@@ -5,8 +5,6 @@ import {Context} from "../Context"
 
 
 export default function Home() {
-
-   
  const {currency, symbol} = useContext(Context)
  const {list} = useSelector(state => state.cryptolist)
   const [coins, setCoins] = useState(list?.list)

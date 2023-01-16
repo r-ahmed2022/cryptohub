@@ -69,7 +69,6 @@ color: #BAFE03;
 
 .sidebar {
   grid-column: 1 / 4;
-  border: 1px solid #fff;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -81,14 +80,17 @@ color: #BAFE03;
   flex-direction: column;
   align-items: center;
 } 
-
 .chart-div  {
    grid-column: 4 / -1;
-   border: 1px solid #fff;
    display: flex;
    flex-direction: column;
+   justify-content: center;
    align-items: center;
+}
 
+.chart {
+  width: 90%;
+  height: 100%;
 }
 
 .crypto-list th, td {
