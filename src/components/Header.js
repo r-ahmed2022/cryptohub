@@ -1,20 +1,25 @@
 import React, {useContext} from 'react'
-import {Link} from "react-router-dom"
-import {Container, Toolbar, Select, MenuItem,AppBar} from "@mui/material"
+import {Link, useNavigate} from "react-router-dom"
+import {Container, Toolbar, Select, MenuItem,AppBar, getInitColorSchemeScript} from "@mui/material"
 import {Context} from "../Context"
 
 export default function Header() {
   const {currency, setCurrency} = useContext(Context)
+  const navigate = useNavigate()
+
+  const goHome = () => {
+      navigate(-1)
+  }
+
   return (
     <AppBar color="transparent" position='static'> 
             <Container maxWidth="lg">
             <Toolbar> 
-            <Link className="navlink" path="/"> 
-                <h1 className="crypto-title">  
+                <h1 className="crypto-title" onClick={() => goHome()}>  
                     CryptoHub
                 </h1>
-             </Link>
-                <Select variant="outlined" style={{
+                
+                <Select variant="outlined"  className="menu" style={{
                     width: 100,
                     height: 40,
                     marginLeft: "auto",

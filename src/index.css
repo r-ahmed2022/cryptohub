@@ -94,14 +94,19 @@ color: #BAFE03;
 }
 
 .crypto-list th, td {
-  box-shadow: 0px 1px 2px 2px #ccc;
   padding: .3em .5em;
+  border-bottom: 1px solid #BAFE03;
 }
+
 .crypto-list th {
   background: #BAFE03;
   color: #000;
   font-weight: 700;
   font-size: 1.5em;
+}
+
+.crypto-title {
+cursor: pointer;
 }
 
 .navlink {

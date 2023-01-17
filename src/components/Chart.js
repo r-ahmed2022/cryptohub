@@ -28,7 +28,10 @@ export default function Chart(props) {
     <div className="chart">
             {
                 !chartData | flag === false ? (<CircularProgress
-            style={{ color: "#BAFE03" }}
+            style={{ color: "#BAFE03",
+                      display: "flex",
+                      "justifyContent": "center",
+                      "alignItems": "center" }}
             size={250}
             thickness={1}
           /> ) : (
@@ -37,17 +40,13 @@ export default function Chart(props) {
               data={{
                 labels: chartData.map((coin) => {
                   let date = new Date(coin[0]);
-                  let time =
-                    date.getHours() > 12
-                      ? `${date.getHours() - 12}:${date.getMinutes()} PM`
-                      : `${date.getHours()}:${date.getMinutes()} AM`;
-                        return  date.toLocaleDateString();
+                  return  date.toLocaleDateString();
                 }),
 
                 datasets: [
                   {
                     data: chartData.map((coin) => coin[1]),
-                    label: `Price ( Past ${days} Days ) in ${currency}`,
+                    label: `Price in past ${days} Days  in ${currency}`,
                     borderColor: "#BAFE03",
                   },
                 ],

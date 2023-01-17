@@ -22,7 +22,7 @@ export default function Coin() {
    function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
-   if (!coin) return <LinearProgress style={{ backgroundColor: "gold" }} />;
+   if (!coin) return <LinearProgress style={{ backgroundColor: "#BAFE03" }} />;
 
   return (
     <div className="coin-page">

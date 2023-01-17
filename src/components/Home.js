@@ -14,11 +14,14 @@ const  history = useNavigate();
 
 
     useEffect(() => {
-      const updatedList = list.filter((coin) =>
+      const updatedList = list?.filter((coin) =>
           coin.name.toLowerCase().includes(search) ||
           coin.symbol.toLowerCase().includes(search)
       )
       setCoins(updatedList)
+      return () => {
+        console.log("component unmounted")
+      }
 
     }, [search, list])
   
@@ -31,7 +34,6 @@ const  history = useNavigate();
          <td><span className="coin">{symbol}{crypto.low_24h}</span></td>
       </tr>
    })
- !currency ? <p>Loading...</p> : console.log(symbol)
   return (
     <main className="crypto-content">
     <h1>Crypto Currencies across the Globe </h1>
