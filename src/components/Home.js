@@ -40,7 +40,7 @@ const  history = useNavigate();
    })
   return (
     <main className="crypto-content">
-    <h1>Crypto Currencies across the Globe </h1>
+    <h1>Trending Crypto Currencies across the Globe </h1>
     <input name="search" type="text" placeholder='Search for cryptocurrency' id="search" onChange={(e) => setSearch(e.target.value)}/>
      
         <table className="crypto-list">

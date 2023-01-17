@@ -166,7 +166,7 @@ cursor: pointer;
 
     @media (max-width: 500px) {
       .wrapper {
-        width: 100%;
+        width: 90%;
         margin: .5em auto;
       }
       .crypto-content {
@@ -174,9 +174,9 @@ cursor: pointer;
       }
 
        #search {
-        width: 90%;
+        width: auto;
        }
-      .crypto-list {
+       .crypto-content .crypto-list {
         width: auto;
        
       }
