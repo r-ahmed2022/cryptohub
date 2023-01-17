@@ -30,7 +30,7 @@ export default function Coin() {
 
            <h1>{coin?.name}</h1>
            <div className="coin-name">
-             <img src={coin?.image.large} alt={coin?.name}/>
+             <img className="coin-pic" src={coin?.image.large} alt={coin?.name}/>
              <p style={{textAlign: "center", padding: ".2em .5em" }}>
               {parse(coin?.description.en.split(". ")[0])}.
              </p>
@@ -45,6 +45,9 @@ export default function Coin() {
     <div className="chart-div">
           <h1>Chart area</h1>
            <Chart id={coin.id}/>
+           <div className="market-info">
+              <p>{coin?.price_change_percentage_7d}</p>
+           </div>
     </div>
     
     </div>

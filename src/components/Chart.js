@@ -23,7 +23,7 @@ export default function Chart(props) {
            return () => {
             console.log("component unmounted")
            }
-   }, [])
+   }, [currency])
   return (
     <div className="chart">
             {
@@ -47,7 +47,7 @@ export default function Chart(props) {
                   {
                     data: chartData.map((coin) => coin[1]),
                     label: `Price in past ${days} Days  in ${currency}`,
-                    borderColor: "#BAFE03",
+                    backgroundColor: "#BAFE03",
                   },
                 ],
               }}

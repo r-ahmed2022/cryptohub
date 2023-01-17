@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import {Routes, Route} from "react-router-dom"
 import { useDispatch } from 'react-redux';
 import Header from "./components/Header"
@@ -7,9 +7,13 @@ import Home from "./components/Home"
 import Coin from "./components/Coin"
 import { LIST_CRYPTO } from './redux/cryptoList';
 import {Context} from "./Context"
+import Startpage from './components/Startpage';
+import Start from "./components/Startpage"
+
 function App() {
   const {currency} = useContext(Context);
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(LIST_CRYPTO(currency));
   }, [dispatch, currency]);

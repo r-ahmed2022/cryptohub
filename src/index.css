@@ -19,10 +19,20 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+ 
 }
 
 .crypto-title {
 color: #BAFE03;
+}
+
+.startpage {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
 }
 
 .crypto-content {
@@ -32,6 +42,8 @@ color: #BAFE03;
   align-items: center;
   height: auto;
   padding-top: 2em;
+ 
+ 
 }
 
 .crypto-content h1 {
@@ -86,11 +98,26 @@ color: #BAFE03;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   position: relative;
 }
 
 .chart {
   width: 90%;
   height: 100%;
+  padding-top: 2em;
+}
+
+.market-info {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 2em;
+  right: 3em;
+  border: 1px solid #BAFE03;
+}
+.market-info p {
+  color: #fff;
+ 
 }
 
 .crypto-list th, td {
@@ -142,6 +169,14 @@ cursor: pointer;
       .crypto-list {
         width: auto;
        
+      }
+      .coin-page {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .market-info {
+        display: none;
       }
     }
 
