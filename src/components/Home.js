@@ -2,9 +2,7 @@ import React, { useContext, useState, useEffect} from 'react'
 import {useSelector} from "react-redux"
 import { useNavigate } from 'react-router-dom';
 import {Context} from "../Context"
-
-
-
+import Pagination from './Pagination';
 
 export default function Home() {
  const {symbol} = useContext(Context)
@@ -12,7 +10,8 @@ export default function Home() {
   const [coins, setCoins] = useState(list?.list)
   const [search, setSearch] = useState("");
   const [pageNo, setPageNo] = useState(1);
-
+  const [coinsPerPage, setCoinsPerPage ] = useState(10)
+  const [totalCoins, setTotalCoins] = useState(100)
  
 const  history = useNavigate();
 
@@ -47,7 +46,7 @@ const  history = useNavigate();
         <tr><th>Symbol</th><th>Name</th><th>Curr_Price</th><th>24_High</th><th>24_Low</th></tr>
           {cryptoElements}
         </table>
-             
+        <Pagination totalCoins={totalCoins} coinsPerPage={coinsPerPage} />     
     </main>
   )
 }
