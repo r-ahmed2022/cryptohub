@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect} from 'react'
 import {useSelector} from "react-redux"
 import { useNavigate } from 'react-router-dom';
 import {Context} from "../Context"
+import {Table} from "./Table"
 import Pagination from './Pagination';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
   const [search, setSearch] = useState("");
   const [pageNo, setPageNo] = useState(1);
   const [coinsPerPage, setCoinsPerPage ] = useState(10)
-  const [totalCoins, setTotalCoins] = useState(100)
+  const [totalCoins, setTotalCoins] = useState(list?.list)
  
 const  history = useNavigate();
 
@@ -28,25 +29,23 @@ const  history = useNavigate();
 
     }, [search, list])
   
-    const cryptoElements = coins?.map(crypto => {
-      return <tr className="crypto-Card" onClick={() => history(`/coins/${crypto.id}`)}>
-        <td><img className="coin" src={crypto.image} alt="crypto-pic" /></td>
-         <td><span className="coin">{crypto.name}</span></td>
-         <td><span className="coin">{symbol}{crypto.current_price}</span></td>
-         <td><span className="coin">{symbol}{crypto.high_24h}</span></td>
-         <td><span className="coin">{symbol}{crypto.low_24h}</span></td>
-      </tr>
-   })
+ 
+   const paginate = (number) => {
+ setPageNo(number)
+
+}
+
+const lastPageNo = pageNo * coinsPerPage
+const firstPageNo = lastPageNo - coinsPerPage
+const currentCoins = coins?.slice(firstPageNo, lastPageNo)
+
   return (
     <main className="crypto-content">
     <h1>Trending Crypto Currencies across the Globe </h1>
     <input name="search" type="text" placeholder='Search for cryptocurrency' id="search" onChange={(e) => setSearch(e.target.value)}/>
      
-        <table className="crypto-list">
-        <tr><th>Symbol</th><th>Name</th><th>Curr_Price</th><th>24_High</th><th>24_Low</th></tr>
-          {cryptoElements}
-        </table>
-        <Pagination totalCoins={totalCoins} coinsPerPage={coinsPerPage} />     
+         <Table coins={currentCoins} />
+        <Pagination coins={coins} coinsPerPage={coinsPerPage} onclick={paginate} />     
     </main>
   )
 }

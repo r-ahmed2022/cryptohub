@@ -1,21 +1,26 @@
 import React from 'react'
 
-export default function Pagination({totalCoins, coinsPerPage}) {
-
-    const coinNumbers = [];
-    for(let i =0; i <= Math.ceil(totalCoins / coinsPerPage); i++)
-       coinNumbers.push(i)
+const Pagination = ({coins, coinsPerPage, onclick}) => {
+       const pageNumbers = []
+    for(let j = 1; j <= Math.ceil( coins?.length / coinsPerPage); j++)
+    {
+       pageNumbers.push(j)
+    }
   return (
-    <ul className="pagination">
+     
+          <ul className="pagination">
          {
-            coinNumbers.map(number => {
-            return <li>
-            <a href="!#">
+            pageNumbers.map(number => (
+             <li key={number}>
+            <a href="!#" onClick={() => onclick(number)}>
             {number}
             </a>
             </li>
-         })
+            ))
          }
     </ul>
+
   )
 }
+
+export default Pagination
