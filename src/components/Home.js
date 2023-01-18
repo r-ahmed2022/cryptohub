@@ -14,7 +14,6 @@ export default function Home() {
   const [coinsPerPage, setCoinsPerPage ] = useState(10)
   const [totalCoins, setTotalCoins] = useState(list?.list)
  
-const  history = useNavigate();
 
 
     useEffect(() => {
