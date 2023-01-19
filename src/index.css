@@ -186,11 +186,7 @@ cursor: pointer;
 
 
 
-.trending-coins {
-  width: 100px;
-  height: auto;
-  border: 1px solid #ccc;
-}
+
 
 .crypto-Card {
   width: auto;
@@ -198,6 +194,20 @@ cursor: pointer;
   margin: .5em 1em;
   color: #fff;
   cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-coins {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ccc;
+  display: flex;
+  color: #fff;
 }
 
 .crypto-Card img {

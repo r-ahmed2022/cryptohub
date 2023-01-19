@@ -1,16 +1,15 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 import {useNavigate} from "react-router-dom"
 import {useSelector} from "react-redux"
 
-import {Container, Toolbar, Select, MenuItem,AppBar} from "@mui/material"
+import {Container, Select, MenuItem,AppBar} from "@mui/material"
 import {Context} from "../Context"
 
 export default function Header() {
   const {currency, setCurrency} = useContext(Context)
   const navigate = useNavigate()
   const {list} = useSelector(state => state.trendingcryptos)
-  const [trendingCoins, setTrendingCoins] = useState(list?.coins)
-  console.log(trendingCoins)
+  const [trendingCoins] = useState([list?.coins])
   const goHome = () => {
       navigate(-1)
   }
@@ -18,15 +17,12 @@ export default function Header() {
   return (
     <AppBar color="transparent" position='static'> 
             <Container maxWidth="lg">
-            <Toolbar> 
+            <div className="toolbar"> 
+            
                 <h1 className="crypto-title" onClick={() => goHome()}>  
                     CryptoHub
                 </h1>
-
-                <div className="trending-coins">
-
-                </div>
-
+         
                 <Select variant="outlined"  className="menu" style={{
                     width: 100,
                     height: 40,
@@ -36,10 +32,11 @@ export default function Header() {
                 }}
                 value={currency}
                 onChange={(e) => setCurrency(e.target.value)}>
+                    
                     <MenuItem value={"USD"}>USD</MenuItem>
                     <MenuItem value={"INR"}>INR</MenuItem>
                 </Select>
-            </Toolbar>
+            </div>
             </Container>    
     </AppBar>
 
