@@ -10,9 +10,9 @@ export const Table = (props) => {
         return <tr className="crypto-Card" key={crypto.id} onClick={() => history(`/coins/${crypto.id}`)}>
           <td><img className="coin" src={crypto.image} alt="crypto-pic" /></td>
            <td><span className="coin">{crypto.name}</span></td>
-           <td><span className="coin">{symbol}{crypto.current_price}</span></td>
-           <td><span className="coin">{symbol}{crypto.high_24h}</span></td>
-           <td><span className="coin">{symbol}{crypto.low_24h}</span></td>
+           <td><span className="coin">{symbol}&nbsp;{crypto.current_price}</span></td>
+           <td><span className="coin">{symbol}&nbsp;{crypto.high_24h}</span></td>
+           <td><span className="coin">{symbol}&nbsp;{crypto.low_24h}</span></td>
         </tr>
      })
 const  history = useNavigate();

@@ -24,6 +24,7 @@ body {
 
 .pagination {
    display: flex;
+   justify-content: center;
    margin: .6em 0;
    color: #fff;
 }
@@ -37,6 +38,7 @@ body {
   border-radius: 50%;
   background: #BAFE03;
   font-weight: 700;
+  
 }
 
 .pagination li a {
@@ -76,7 +78,7 @@ color: #BAFE03;
 
 
 .crypto-list {
-  width: 100%;
+  width: 90%;
   align-self: center;
   color: #fff;
   text-align: center;
@@ -88,12 +90,15 @@ color: #BAFE03;
   color: #000;
   font-weight: 700;
   text-transform: uppercase;
+  border: none;
+
 }
 
 #search {
-  width: 90%;
-  display: block;
+  width: 80%;
   padding: 1em 2em;
+  border: 0;
+  border-radius: 1.5em;
 }
 
 .coin-page {
@@ -179,6 +184,14 @@ cursor: pointer;
   text-decoration: none;
 }
 
+
+
+.trending-coins {
+  width: 100px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
 .crypto-Card {
   width: auto;
   height: auto;
@@ -200,15 +213,27 @@ cursor: pointer;
       }
       .crypto-content {
         width: 100%;
+        margin: 0 auto;
       }
 
-       #search {
-        width: auto;
-       }
-       .crypto-content .crypto-list {
-        width: auto;
+      .crypto-list {
+        width: 50%;
        
       }
+
+    
+
+      .crypto-list th, tr, td, thead {
+        padding: .3em;
+        border-bottom: 1px solid #BAFE03;
+      }
+
+
+
+       #search {
+        width: 80%;
+       }
+       
       .coin-page {
         display: flex;
         flex-direction: column;
@@ -217,5 +242,11 @@ cursor: pointer;
       .days-sec {
         display: none;
       }
+      .pagination li { 
+
+        margin: .2em .4em;
+        padding: .2em .3em;
+      }
+     
     }
 

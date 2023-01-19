@@ -1,12 +1,16 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import {useNavigate} from "react-router-dom"
+import {useSelector} from "react-redux"
+
 import {Container, Toolbar, Select, MenuItem,AppBar} from "@mui/material"
 import {Context} from "../Context"
 
 export default function Header() {
   const {currency, setCurrency} = useContext(Context)
   const navigate = useNavigate()
-
+  const {list} = useSelector(state => state.trendingcryptos)
+  const [trendingCoins, setTrendingCoins] = useState(list?.coins)
+  console.log(trendingCoins)
   const goHome = () => {
       navigate(-1)
   }
@@ -18,6 +22,10 @@ export default function Header() {
                 <h1 className="crypto-title" onClick={() => goHome()}>  
                     CryptoHub
                 </h1>
+
+                <div className="trending-coins">
+
+                </div>
 
                 <Select variant="outlined"  className="menu" style={{
                     width: 100,
