@@ -30,7 +30,7 @@ export default function Home() {
   
  
    const paginate = (number) => {
- setPageNo(number)
+     setPageNo(number)
 
 }
 
