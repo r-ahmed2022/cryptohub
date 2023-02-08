@@ -33,8 +33,8 @@ export default function Header() {
                 value={currency}
                 onChange={(e) => setCurrency(e.target.value)}>
                     
-                    <MenuItem value={"USD"}>USD</MenuItem>
-                    <MenuItem value={"INR"}>INR</MenuItem>
+                    <MenuItem className="menu-item" value={"USD"}>USD</MenuItem>
+                    <MenuItem className="menu-item" value={"INR"}>INR</MenuItem>
                 </Select>
             </div>
             </Container>    

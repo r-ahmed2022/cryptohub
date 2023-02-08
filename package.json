@@ -1,6 +1,6 @@
 {
   "name": "cryptohub",
-  "home": "https://r-ahmed2022.github.io/cryptohub",
+  "homepage": "https://r-ahmed2022.github.io/cryptohub",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
