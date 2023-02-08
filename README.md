@@ -92,6 +92,8 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 > Add a link to your deployed project.
 
 - [Live Demo Link](https://r-ahmed2022.github.io/cryptohub/)
+
+## 🚀 Video <a name="live-demo"></a>
 - [Video Link](https://www.loom.com/share/f7c3d5269625432da040b2cd0314e3ea)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -213,11 +215,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Home component]**
-- [ ] **[CryptoCurrency]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
