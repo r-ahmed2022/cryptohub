@@ -62,8 +62,6 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -76,8 +74,6 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Single Page application]**
 - **[Home component]**
 - **[Coin component]**
@@ -89,8 +85,6 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://r-ahmed2022.github.io/cryptohub/)
 
 ## 🚀 Video <a name="live-demo"></a>
@@ -101,8 +95,6 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 ### Prerequisites
 - Installation of Git
@@ -203,8 +195,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Riyaz Ahmed**
 
 - GitHub: [@r-ahmed2022](https://github.com/r-ahmed2022)
@@ -233,8 +223,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project then do share this project with your friends and don't forget to give a ⭐ star on it"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -242,8 +230,6 @@ If you like this project then do share this project with your friends and don't 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 Microverse
 
