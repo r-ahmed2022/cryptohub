@@ -49,6 +49,10 @@ body {
   cursor: pointer;
 }
 
+.logo-symbol {
+  color: #bafe03;
+}
+
 .startpage {
   width: 100%;
   height: 100vh;

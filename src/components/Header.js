@@ -16,11 +16,11 @@ export default function Header() {
     <AppBar color="transparent" position="static">
       <Container maxWidth="lg">
         <div className="toolbar">
-
           <h1 className="crypto-title" onClick={() => goHome()}>
+            <span className="logo-symbol">&larr;</span>
+            {' '}
             CryptoHub
           </h1>
-
           <Select
             variant="outlined"
             className="menu"

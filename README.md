@@ -79,7 +79,6 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 - **[Coin component]**
 - **[Pagination component]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
@@ -90,7 +89,6 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 ## 🚀 Video <a name="live-demo"></a>
 - [Video Link](https://www.loom.com/share/f7c3d5269625432da040b2cd0314e3ea)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -189,7 +187,6 @@ Example:
 ```
  -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
@@ -200,7 +197,6 @@ Example:
 - GitHub: [@r-ahmed2022](https://github.com/r-ahmed2022)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/riyaz-ahmed-4216a71a8/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
@@ -217,7 +213,6 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
@@ -225,7 +220,6 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project then do share this project with your friends and don't forget to give a ⭐ star on it"
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -238,7 +232,6 @@ Microverse
 <!-- FAQ (optional) -->
 Design idea by (<a href="#readme-top">Nelson Sakwa on Behance</a>)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -246,4 +239,3 @@ Design idea by (<a href="#readme-top">Nelson Sakwa on Behance</a>)
 
 This project is [MIT](./License.txt) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
