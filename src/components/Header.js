@@ -1,15 +1,11 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useContext} from 'react'
 import {useNavigate} from "react-router-dom"
-import {useSelector} from "react-redux"
-
 import {Container, Select, MenuItem,AppBar} from "@mui/material"
 import {Context} from "../Context"
 
 export default function Header() {
   const {currency, setCurrency} = useContext(Context)
   const navigate = useNavigate()
-  const {list} = useSelector(state => state.trendingcryptos)
-  const [trendingCoins] = useState([list?.coins])
   const goHome = () => {
       navigate(-1)
   }
