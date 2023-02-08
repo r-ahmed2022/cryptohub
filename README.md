@@ -236,6 +236,7 @@ Microverse
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
+Design idea by (<a href="#readme-top">Nelson Sakwa on Behance</a>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
