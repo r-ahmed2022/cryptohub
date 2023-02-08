@@ -79,8 +79,8 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 > Describe between 1-3 key features of the application.
 
 - **[Single Page application]**
-- **[Lightweight]**
-- **[React component]**
+- **[Home component]**
+- **[Coin component]**
 - **[Pagination component]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
