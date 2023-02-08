@@ -8,8 +8,6 @@ import Coin from "./components/Coin"
 import { LIST_CRYPTO } from './redux/cryptoList';
 import { TRENDING_CRYPTO } from './redux/TopTrendingCoin';
 import {Context} from "./Context"
-import Startpage from './components/Startpage';
-import Start from "./components/Startpage"
 
 function App() {
   const {currency} = useContext(Context);
