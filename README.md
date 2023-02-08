@@ -81,6 +81,7 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 - **[Single Page application]**
 - **[Lightweight]**
 - **[React component]**
+- **[Pagination component]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -251,18 +252,6 @@ Microverse
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
