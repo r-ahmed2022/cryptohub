@@ -8,7 +8,6 @@ export default function Home() {
   const [coins, setCoins] = useState(list?.list);
   const [search, setSearch] = useState('');
   const [pageNo, setPageNo] = useState(1);
-  // eslint-disable-next-line no-unused-vars
   const [coinsPerPage, setCoinsPerPage] = useState(10);
 
   useEffect(() => {
@@ -16,7 +15,7 @@ export default function Home() {
           || coin.symbol.toLowerCase().includes(search));
     setCoins(updatedList);
     return () => {
-      console.log('component unmounted');
+
     };
   }, [search, list]);
 

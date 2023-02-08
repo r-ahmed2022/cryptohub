@@ -18,7 +18,6 @@ export default function Coin() {
         setCoin(data);
       });
     return () => {
-      console.log('component unmounted');
     };
   }, []);
 
