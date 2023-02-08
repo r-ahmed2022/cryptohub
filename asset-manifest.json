@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cryptohub/static/css/main.035c3680.css",
-    "main.js": "/cryptohub/static/js/main.c3c91032.js",
+    "main.css": "/cryptohub/static/css/main.a0b18466.css",
+    "main.js": "/cryptohub/static/js/main.1d5eba78.js",
     "index.html": "/cryptohub/index.html",
-    "main.035c3680.css.map": "/cryptohub/static/css/main.035c3680.css.map",
-    "main.c3c91032.js.map": "/cryptohub/static/js/main.c3c91032.js.map"
+    "main.a0b18466.css.map": "/cryptohub/static/css/main.a0b18466.css.map",
+    "main.1d5eba78.js.map": "/cryptohub/static/js/main.1d5eba78.js.map"
   },
   "entrypoints": [
-    "static/css/main.035c3680.css",
-    "static/js/main.c3c91032.js"
+    "static/css/main.a0b18466.css",
+    "static/js/main.1d5eba78.js"
   ]
 }
