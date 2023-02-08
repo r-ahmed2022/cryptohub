@@ -1,7 +1,7 @@
 :root {
- --default-bg: #070B0F;
- --defaultcolor: #DBDDDF;
- --specialcolor: #BAFE03;
+  --default-bg: #070b0f;
+  --defaultcolor: #dbdddf;
+  --specialcolor: #bafe03;
 }
 
 body {
@@ -19,26 +19,24 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
- 
 }
 
 .pagination {
-   display: flex;
-   justify-content: center;
-   margin: .6em 0;
-   color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0.6em 0;
+  color: #fff;
 }
 
 .pagination li {
   list-style: none;
   display: block;
-  margin: .2em .8em;
-  padding: .2em .4em;
+  margin: 0.2em 0.8em;
+  padding: 0.2em 0.4em;
   border: 1px solid #fff;
   border-radius: 50%;
-  background: #BAFE03;
+  background: #bafe03;
   font-weight: 700;
-  
 }
 
 .pagination li a {
@@ -47,35 +45,33 @@ body {
 }
 
 .crypto-title {
-color: #BAFE03;
+  color: #bafe03;
+  cursor: pointer;
 }
 
 .startpage {
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .crypto-content {
-   width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
   padding-top: 1em;
- 
- 
 }
 
 .crypto-content h1 {
-  margin: .5em 0;
+  margin: 0.5em 0;
   padding: 0;
   color: #fff;
 }
-
 
 .crypto-list {
   width: 90%;
@@ -85,13 +81,12 @@ color: #BAFE03;
   margin-top: 1.5em;
 }
 
-.crypto-list  tr.crypto-Card:hover {
+.crypto-list tr.crypto-Card:hover {
   background: #ccc;
   color: #000;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-
 }
 
 #search {
@@ -102,16 +97,14 @@ color: #BAFE03;
 }
 
 .coin-page {
-
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, minmax(100px, auto));
-  grid-template-rows: auto ;
-  gap: .2em;
+  grid-template-rows: auto;
+  gap: 0.2em;
   margin: 2em 0;
   color: #fff;
 }
-
 
 .sidebar {
   grid-column: 1 / 4;
@@ -125,13 +118,14 @@ color: #BAFE03;
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
-.chart-div  {
-   grid-column: 4 / -1;
-   display: flex;
-   flex-direction: column;
-   justify-content: start;
-   align-items: center;
+}
+
+.chart-div {
+  grid-column: 4 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 .chart-div .days-sec {
@@ -143,8 +137,8 @@ color: #BAFE03;
 }
 
 .days-sec h4 {
-  margin: 0 .6em;
-  color: #BAFE03;
+  margin: 0 0.6em;
+  color: #bafe03;
 }
 
 .chart {
@@ -155,43 +149,35 @@ color: #BAFE03;
 }
 
 .chart-div .days-sec menu {
-  width: autogi;
+  width: auto;
   height: auto;
   position: absolute;
   bottom: -5em;
   left: 0;
-  border: 1px solid #BAFE03;
+  border: 1px solid #bafe03;
 }
 
-
-.crypto-list th, td {
-  padding: .3em .5em;
-  border-bottom: 1px solid #BAFE03;
+.crypto-list th,
+td {
+  padding: 0.3em 0.5em;
+  border-bottom: 1px solid #bafe03;
 }
 
 .crypto-list th {
-  background: #BAFE03;
+  background: #bafe03;
   color: #000;
   font-weight: 700;
   font-size: 1.5em;
-}
-
-.crypto-title {
-cursor: pointer;
 }
 
 .navlink {
   text-decoration: none;
 }
 
-
-
-
-
 .crypto-Card {
   width: auto;
   height: auto;
-  margin: .5em 1em;
+  margin: 0.5em 1em;
   color: #fff;
   cursor: pointer;
 }
@@ -214,49 +200,46 @@ cursor: pointer;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-    }
+}
 
-    @media (max-width: 500px) {
-      .wrapper {
-        width: 90%;
-        margin: .5em auto;
-      }
-      .crypto-content {
-        width: 100%;
-        margin: 0 auto;
-      }
+@media (max-width: 500px) {
+  .wrapper {
+    width: 90%;
+    margin: 0.5em auto;
+  }
 
-      .crypto-list {
-        width: 50%;
-       
-      }
+  .crypto-content {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    
+  .crypto-list {
+    width: 50%;
+  }
 
-      .crypto-list th, tr, td, thead {
-        padding: .3em;
-        border-bottom: 1px solid #BAFE03;
-      }
+  .crypto-list th,
+  tr,
+  td,
+  thead {
+    padding: 0.3em;
+    border-bottom: 1px solid #bafe03;
+  }
 
+  #search {
+    width: 80%;
+  }
 
+  .coin-page {
+    display: flex;
+    flex-direction: column;
+  }
 
-       #search {
-        width: 80%;
-       }
-       
-      .coin-page {
-        display: flex;
-        flex-direction: column;
-      }
+  .days-sec {
+    display: none;
+  }
 
-      .days-sec {
-        display: none;
-      }
-      .pagination li { 
-
-        margin: .2em .4em;
-        padding: .2em .3em;
-      }
-     
-    }
-
+  .pagination li {
+    margin: 0.2em 0.4em;
+    padding: 0.2em 0.3em;
+  }
+}

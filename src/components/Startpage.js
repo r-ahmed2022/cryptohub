@@ -1,12 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-const Startpage = () => {
-  return (
-    <div className="startpage">
-    
-          <h1>Startpage</h1>
-    </div>
-  )
-}
+const Startpage = () => (
+  <div className="startpage">
 
-export default Startpage
+    <h1>Startpage</h1>
+  </div>
+);
+
+export default Startpage;

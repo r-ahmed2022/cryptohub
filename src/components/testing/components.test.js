@@ -3,11 +3,11 @@ import { Provider } from 'react-redux';
 import store from '../../redux/configureStore';
 import Header from '../Header';
 import Home from '../Home';
-import Coin from '../Coin'
+import Coin from '../Coin';
 
 describe('Cryptocurrencies', () => {
   test('should match header snapshot', () => {
-    const {container} = render(
+    const { container } = render(
       <Provider store={store}>
         <Header />
       </Provider>,
@@ -16,7 +16,7 @@ describe('Cryptocurrencies', () => {
   });
 
   test('should match home snapshot', () => {
-    const {container} = render(
+    const { container } = render(
       <Provider store={store}>
         <Home />
       </Provider>,
@@ -25,7 +25,7 @@ describe('Cryptocurrencies', () => {
   });
 
   test('should match coin snapshot', () => {
-    const {container} = render(
+    const { container } = render(
       <Provider store={store}>
         <Coin />
       </Provider>,
