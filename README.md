@@ -202,7 +202,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] **[ Real-time price component displayed on mouse hover]**
+- **[ Real-time price component displayed on mouse hover]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
