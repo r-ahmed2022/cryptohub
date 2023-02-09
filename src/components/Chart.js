@@ -16,10 +16,8 @@ export default function Chart(props) {
       .then((data) => {
         setflag(true);
         setchartData(data?.prices);
-      })
-      .catch((err) => console.log(err.message));
+      });
     return () => {
-      console.log('component unmounted');
     };
   }, [url, props.days]);
   return (
