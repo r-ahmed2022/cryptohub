@@ -31,7 +31,7 @@ export default function Coin() {
       <div className="sidebar">
 
         <h1>{coin?.name}</h1>
-        <div className="coin-name">
+        <div className="coinname">
           <img className="coin-pic" src={coin?.image.large} alt={coin?.name} />
           <p style={{ textAlign: 'center', padding: '.2em .5em' }}>
             {parse(coin?.description.en.split('. ')[0])}

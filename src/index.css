@@ -13,14 +13,20 @@ body {
 }
 
 .wrapper {
-  width: 90%;
-  margin: 1em auto;
-  height: auto;
+  width: 100%;
+  height: .5em auto;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.cryptoElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -53,19 +59,12 @@ body {
   color: #bafe03;
 }
 
-.startpage {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
 
 .crypto-content {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: auto;
   padding-top: 1em;
@@ -79,13 +78,28 @@ body {
 
 .crypto-list {
   width: 90%;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   color: #fff;
   text-align: center;
   margin-top: 1.5em;
 }
 
-.crypto-list tr.crypto-Card:hover {
+.table-headers {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.3em;
+  font-size: 1.2em;
+  font-weight: 700;
+  background: #bafe03;
+  color: #1c1c1c;
+  list-style: none;
+}
+
+.crypto-list .crypto-Card:hover {
   background: #ccc;
   color: #000;
   font-weight: 700;
@@ -161,29 +175,33 @@ body {
   border: 1px solid #bafe03;
 }
 
-.crypto-list th,
-td {
-  padding: 0.3em 0.5em;
-  border-bottom: 1px solid #bafe03;
-}
-
-.crypto-list th {
-  background: #bafe03;
-  color: #000;
-  font-weight: 700;
-  font-size: 1.5em;
-}
-
 .navlink {
   text-decoration: none;
 }
 
 .crypto-Card {
-  width: auto;
-  height: auto;
-  margin: 0.5em 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin: .3em  1em;
   color: #fff;
+  padding: 0.2em;
+  border-bottom: 1px solid #bafe03;
   cursor: pointer;
+  list-style: none;
+  }
+
+.crypto-Card li {
+  width: 100%;
+  padding: 0 .1em;
+  align-self: center;
+}
+
+.crypto-Card li img {
+  margin: 0;
+  padding: 0;
+  justify-self: baseline;
 }
 
 .toolbar {
@@ -200,9 +218,13 @@ td {
   color: #fff;
 }
 
-.crypto-Card img {
+.current_price {
+  display: none;
+}
+
+.crypto-Card li img {
   width: 30px;
-  height: 30px;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -213,21 +235,50 @@ td {
   }
 
   .crypto-content {
-    width: 100%;
     margin: 0 auto;
   }
 
-  .crypto-list {
-    width: 50%;
+  .crypto-content h1 {
+    font-size: 1.5em;
+    text-align: center;
   }
 
-  .crypto-list th,
-  tr,
-  td,
-  thead {
-    padding: 0.3em;
-    border-bottom: 1px solid #bafe03;
+  .crypto-list {
+    width: 100%;
+    
+
   }
+
+  .table-headers {
+    display: none;
+  }
+  .crypto-Card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px;
+  }
+
+  .lastcoin {
+    display: none;
+  }
+
+  .current_price {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+.coin-name {
+   font-size: 1.2em;
+   font-weight: bold;
+   color: #bafe03;
+}
+
+.coinname {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+}
 
   #search {
     width: 80%;

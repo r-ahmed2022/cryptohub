@@ -7,48 +7,44 @@ const Table = (props) => {
   const history = useNavigate();
   const { symbol } = useContext(Context);
   const cryptoElements = coins?.map((crypto) => (
-    <tr className="crypto-Card" key={crypto.id} onClick={() => history(`/coins/${crypto.id}`)}>
-      <td><img className="coin" src={crypto.image} alt="crypto-pic" /></td>
-      <td><span className="coin">{crypto.name}</span></td>
-      <td>
-        <span className="coin">
-          {symbol}
-&nbsp;
-          {crypto.current_price}
-        </span>
-      </td>
-      <td>
-        <span className="coin">
-          {symbol}
-&nbsp;
-          {crypto.high_24h}
-        </span>
-      </td>
-      <td>
-        <span className="coin">
-          {symbol}
-&nbsp;
-          {crypto.low_24h}
-        </span>
-      </td>
-    </tr>
+    <ul className="crypto-Card" key={crypto.id} onClick={() => history(`/coins/${crypto.id}`)}>
+      <li>
+        <img className="coin" src={crypto.image} alt="crypto-pic" />
+        {' '}
+      </li>
+      <li className="coin-name">{crypto.name}</li>
+      <li className="current_price">Current Price</li>
+      <li className="coin">
+        {symbol}
+        {' '}
+        {crypto.current_price}
+      </li>
+      <li className="lastcoin">
+        {symbol}
+        {' '}
+        {crypto.high_24h}
+      </li>
+      <li className="lastcoin">
+        {symbol}
+        {' '}
+        {crypto.low_24h}
+      </li>
+    </ul>
   ));
 
   return (
-    <table className="crypto-list">
-      <thead>
-        <tr>
-          <th>Symbol</th>
-          <th>Name</th>
-          <th>Curr_Price</th>
-          <th>24_High</th>
-          <th>24_Low</th>
-        </tr>
-      </thead>
-      <tbody>
+    <div className="crypto-list">
+      <ul className="table-headers">
+        <li>Symbol</li>
+        <li>Name</li>
+        <li>Curr_Price</li>
+        <li>24_High</li>
+        <li>24_Low</li>
+      </ul>
+      <div className="cryptoElements">
         {cryptoElements}
-      </tbody>
-    </table>
+      </div>
+    </div>
   );
 };
 export default Table;
