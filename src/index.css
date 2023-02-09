@@ -99,6 +99,12 @@ body {
   list-style: none;
 }
 
+.table-headers li {
+  width: 100%;
+  padding: 0 0.1em;
+  align-self: center;
+}
+
 .crypto-Card {
   width: 100%;
   display: flex;
