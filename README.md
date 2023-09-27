@@ -1,27 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
   <br/>
@@ -190,12 +168,14 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Riyaz Ahmed**
-
+- Portfolio: [Portfolio](https://r-ahmed2022.github.io/myportfolio/)
 - GitHub: [@r-ahmed2022](https://github.com/r-ahmed2022)
-- LinkedIn: [Linkedin](https://www.linkedin.com/in/riyaz-ahmed-4216a71a8/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/riyaz-ahmed-4216a71a8/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- FUTURE FEATURES -->
