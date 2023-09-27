@@ -1,27 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
   <br/>
@@ -62,8 +40,6 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -76,29 +52,25 @@ A Single Page App (SPA) that displays information about all cryptocurrerncies us
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Single Page application]**
-- **[Lightweight]**
-- **[React component]**
+- **[Home component]**
+- **[Coin component]**
+- **[Pagination component]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://r-ahmed2022.github.io/cryptohub/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🚀 Video <a name="live-demo"></a>
+- [Video Link](https://www.loom.com/share/f7c3d5269625432da040b2cd0314e3ea)
+
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 ### Prerequisites
 - Installation of Git
@@ -193,30 +165,24 @@ Example:
 ```
  -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
+## 👥 Author <a name="authors"></a>
 
 👤 **Riyaz Ahmed**
-
+- Portfolio: [Portfolio](https://r-ahmed2022.github.io/myportfolio/)
 - GitHub: [@r-ahmed2022](https://github.com/r-ahmed2022)
-- LinkedIn: [Linkedin](https://www.linkedin.com/in/riyaz-ahmed-4216a71a8/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/riyaz-ahmed-4216a71a8/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Home component]**
-- [ ] **[CryptoCurrency]**
-
+- **[ Real-time price component displayed on mouse hover]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,43 +194,25 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+If you like this project then do share this project with your friends and don't forget to give a ⭐ star on it"
 
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
+Design idea by (<a href="#readme-top">Nelson Sakwa on Behance</a>)
 
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -272,4 +220,3 @@ Microverse
 
 This project is [MIT](./License.txt) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
